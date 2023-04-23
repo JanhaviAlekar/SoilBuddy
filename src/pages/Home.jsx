@@ -1,11 +1,14 @@
 import React from 'react'
 import Card from '../components/Card'
 import { Link } from 'react-router-dom'
+import image1 from '../images/green-2599290.jpg'
+import ok from '../images/crop2.jpg'
+
 
 const Home = () => {
   return (
     <div className='App'>
-      <div className="relative overflow-hidden  bg-cover bg-no-repeat p-12 text-center" style={{ backgroundImage: 'url("../images/green-1117267.jpg")', height: 600 }}>
+      <div className="relative overflow-hidden p-12 text-center" style={{ backgroundImage: `url(${image1})`, height: 800 , backgroundRepeat: "no-repeat" , backgroundSize: "cover"}}>
         <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed" style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
           <div className="flex h-full items-center justify-center">
             <div className="text-white">
@@ -31,8 +34,8 @@ const Home = () => {
         </div></div>
       <div className='grid p-10 py-10 space-y-7'>
         <section id='Test' className='grid col-1 justify-center space-y-12 w-auto'>
-          <Link to="/form"><Card /></Link>
-          <Card />
+          <Link to="/form"><Card image={ok} /></Link>
+          <Card image={ok}/>
         </section>
       </div>
     </div>

@@ -55,16 +55,16 @@ export default function NavBar() {
               }`}
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-              <li className="text-gray-600 hover:text-blue-600">
+              <li className="text-gray-800 hover:text-blue-600">
                 <NavLink to="/" className="nav-link">Home</NavLink>
               </li>
-              <li className="text-gray-600 hover:text-blue-600">
+              <li className="text-gray-800 hover:text-blue-600">
                 <NavLink to="/form" className="nav-link">Predict</NavLink>
               </li>
-              <li className="text-gray-600 hover:text-blue-600">
+              <li className="text-gray-800 hover:text-blue-600">
                 <NavLink to="/about" className="nav-link">About US</NavLink>
               </li>
-              <li className="text-gray-600 hover:text-blue-600">
+              <li className="text-gray-800 hover:text-blue-600">
                 <NavLink to="/contact" className="nav-link">Contact US</NavLink>
               </li>
             </ul>
