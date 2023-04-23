@@ -8,8 +8,6 @@
 
 }
 
-
-
 .navbar {
   font-family: 'Poppins', serif;
   font-size: 17px;
@@ -24,8 +22,8 @@
   font-weight: 400 !important;
 }
 
-.active {
-  border-bottom: 1px solid black;
+#n1 .active {
+  border-bottom: 1px solid #3f6212;
 }
 
 .heading-main {
@@ -37,4 +35,20 @@
 .heading-sub {
 
   font-size: 60px !important;
+}
+
+.contact {
+  margin: 0;
+
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-contact {
+  width: 1600px;
+  height: 300px;
+  padding-right: 50px;
+
 }

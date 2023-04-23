@@ -1,16 +1,18 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { FaSeedling } from "react-icons/fa"
 export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <nav className="bg-gradient-to-l from-green-500 to-lime-300 navbar w-full bg-white shadow">
+    <nav className="bg-gradient-to-l from-green-500 to-lime-300 navbar w-full bg-white text-green-800 shadow">
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <NavLink to="/contact">
-              <h2 className="text-2xl font-bold">SOILBUDDY</h2>
-            </NavLink>
+            <div className="flex text-2xl font-bold "><FaSeedling />
+
+              <h2 className="text-2xl font-bold pl-2 "> SOILBUDDY</h2>
+            </div>
             <div className="md:hidden">
               <button
                 className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
@@ -54,7 +56,7 @@ export default function NavBar() {
             className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"
               }`}
           >
-            <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+            <ul id="n1" className="items-center  justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               <li className="text-gray-800 hover:text-blue-600">
                 <NavLink to="/" className="nav-link">Home</NavLink>
               </li>
